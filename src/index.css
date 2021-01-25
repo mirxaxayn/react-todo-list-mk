@@ -1,0 +1,108 @@
+.add-button {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.add-button:hover {
+  color: green;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #eee;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root .todo-container {
+  background: white;
+  width: 400px;
+  height: 450px;
+  border-radius: 20px;
+}
+
+.todo-container .main-heading {
+  background: black;
+  color: white;
+  text-align: center;
+  margin: 10px 20px;
+  padding: 5px 0;
+  border-radius: 10px;
+}
+
+.todo-container form {
+  display: flex;
+  justify-content: center;
+}
+
+.todo-container form input {
+  outline: none;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid black;
+  margin: 0 30px 0 0;
+  text-align: center;
+  font-size: 16px;
+}
+.todo-container form button {
+  width: 40px;
+  height: 40px;
+  line-height: 10px;
+  border-radius: 50%;
+  background: #000;
+  color: white;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  font-size: 40px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  transition: 0.3s all;
+}
+.todo-container form button:hover {
+  background: darkblue;
+}
+
+.todo-container .item-container {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  overflow: auto;
+  margin: 10px 0;
+}
+
+.todo-container .item-container .item {
+  padding: 10px 20px;
+  display: flex;
+}
+.todo-container .item-container .item button {
+  width: 30px;
+  height: 30px;
+  line-height: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 50%;
+  background: #000;
+  color: white;
+  outline: none;
+  border: none;
+  margin-right: 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  transition: 0.3s all;
+}
+.todo-container .item-container .item h2 {
+  max-width: 300px;
+  overflow: auto;
+  text-align: justify;
+}
+.todo-container .item-container .item button:hover {
+  background: darkred;
+}
